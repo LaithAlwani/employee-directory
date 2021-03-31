@@ -1,5 +1,6 @@
+import Jumbotron from "./components/Jumbotron"
 function App() {
-  return "Hi from App";
+  return <Jumbotron />
 }
 
 export default App;
