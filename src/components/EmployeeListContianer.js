@@ -27,7 +27,7 @@ class EmployeeListContianer extends Component {
 
     render(){
         return ( 
-            <div className= "container">
+            <div className= "">
                 <Searchbar />
                 <EmployeeList 
                 results={this.state.results}

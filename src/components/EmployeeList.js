@@ -1,17 +1,28 @@
-const EmployeeList = ({results, handleDelete}) => {
+const EmployeeList = ({ results, handleDelete }) => {
   return (
-    <div>
-      {results.map((result) => (
-        <div key={result.id.value}>
-          <img src={result.picture.thumbnail} alt="employee" />
-          <p>
-            {result.name.title}. {result.name.first} {result.name.last}
-          </p>
-          <button className="btn btn-danger mb-2" onClick={()=> handleDelete(result.id.value) }>Delete Employee</button>
-        </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Image</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">location</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+          {results.map(result=>(
+          <tr>
+            <td><img src={result.picture.thumbnail} alt=""/> </td>
+            <td>{result.name.first} {result.name.last}</td>
+            <td>{result.email}</td>
+            <td>{result.location.city}</td>
+            <td><button className="btn ml-auto" onClick={() => handleDelete(result.id.value)}>X</button></td>
+        </tr>
+          ))}
         
-      ))}
-    </div>
+      </tbody>
+    </table>
   );
 };
 

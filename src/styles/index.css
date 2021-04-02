@@ -1,4 +1,29 @@
 .searchbar
-{
+{   
+    width: 50%;
     margin: 1rem auto;
+}
+
+.employeeContainer{
+    display: flex;
+    padding: 0.5rem;
+    width: 80%;
+    margin: 0 auto;
+   
+}
+
+.employeeContainer:nth-child(even){
+    background-color: rgb(231, 231, 231);
+}
+
+.btn{
+    color: red;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.btn:active{
+    outline: none;
+}
+.btn:focus{
+    outline: none;
 }
