@@ -44,7 +44,6 @@ class EmployeeListContianer extends Component {
   };
 
   render() {
-    console.log(this.state.searchInput);
     return (
       <div className="container">
         <Searchbar search={this.searchFilter} />

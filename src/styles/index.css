@@ -27,7 +27,10 @@
 }
 
 @media only screen and (max-width:768px){
-    .city, .image{
+    .searchbar{
+        width: 100%;
+    }
+    .city, .email{
         display: none;
     }
 }
