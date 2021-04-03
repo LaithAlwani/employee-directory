@@ -16,14 +16,18 @@
     background-color: rgb(231, 231, 231);
 }
 
-.btn{
+.deleteBtn{
     color: red;
     font-weight: bold;
     font-size: 1.25rem;
 }
-.btn:active{
-    outline: none;
+
+.form-control:focus{
+    border: none !important;
 }
-.btn:focus{
-    outline: none;
+
+@media only screen and (max-width:768px){
+    .city, .image{
+        display: none;
+    }
 }
