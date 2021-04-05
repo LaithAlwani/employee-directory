@@ -23,10 +23,17 @@ class EmployeeListContianer extends Component {
   }
 
   handleDelete = (id) => {
-    const employeeList = this.state.results.filter(
-      (employee) => employee.id.value !== id
-    );
-    this.setState({ results: employeeList });
+      // eslint-disable-next-line no-restricted-globals
+      const confirmDelete = confirm("Are you sure you want to delete the employee?");
+      if(confirmDelete === true){
+        const employeeList = this.state.results.filter(
+            (employee) => employee.id.value !== id
+          );
+          this.setState({ results: employeeList });
+      }else{
+          return
+      }
+    
   };
 
   sortByName = (param) => {
@@ -40,7 +47,7 @@ class EmployeeListContianer extends Component {
 
   searchFilter = (event) => {
     // const newEmployeeList = this.state.results.filter(employee => employee.name.first === input)
-    this.setState({ searchInput: event.target.value });
+    this.setState({ searchInput: event.target.value.toLowerCase() });
   };
 
   render() {
