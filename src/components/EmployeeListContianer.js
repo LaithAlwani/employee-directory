@@ -10,6 +10,7 @@ class EmployeeListContianer extends Component {
     toggle: true,
     searchInput: "",
   };
+  
   renderEmployeeList = () => {
     API.search()
       .then((res) => {
