@@ -22,7 +22,7 @@ An employee dircotry that would allow a manager to get non-senstive information 
 ## Usage Information:
 * visit [employee directory](https://laithalwani.github.io/employee-directory/) 
 * from the list of employees you can sort the employees by name or location in ascending or descending order 
-* search for an employee using the serch bar
+* search for an employee's firstname by using the serch bar
 * delete an employee
 ![](./public/assets/images/directory.png)
 
